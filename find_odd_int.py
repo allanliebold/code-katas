@@ -1,4 +1,4 @@
-"""Kata: Find the odd int
+"""Kata: Find the odd int.
 
 Best Practices by cerealdinner:
 
@@ -8,7 +8,9 @@ def find_it(seq):
             return i
 """
 
+
 def find_it(seq):
+    """Return the only integer that appears an odd number of times."""
     nums = []
     for i in seq:
         if i not in nums:
