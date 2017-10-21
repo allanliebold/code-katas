@@ -42,4 +42,9 @@
 - **Tests**: `test_find_odd.py`
 - **URL**: [challenge url](https://www.codewars.com/kata/find-the-odd-int/train/python)
 
+**Most digits (7th kyu)**
+
+- **Module**: `find_odd.py`
+- **Tests**: `test_most_digits.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/most-digits/train/python)
 
