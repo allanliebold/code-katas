@@ -1,0 +1,11 @@
+"""Kata: Remove First and Last Character
+
+
+
+"""
+
+def remove_char(s):
+    middle = ''
+    for char in range(1, len(s) - 1):
+        middle += s[char]
+    return middle
