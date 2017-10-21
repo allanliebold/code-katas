@@ -1,0 +1,8 @@
+def is_square(n):
+    if n < 0:
+        return False
+    root = n ** .5
+    if root - int(root) == 0:
+        return True
+    else:
+        return False
