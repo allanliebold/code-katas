@@ -1,15 +1,23 @@
-"""Test for The highest profit wins!"""
+"""Test for The highest profit wins."""
+import pytest
 
-from random import randint, shuffle
+test_data = [([1, 2, 3, 4, 5], [1, 5]),
+             ([2334454, 5], [5, 2334454]),
+             ([8, 4, 3, 20, 50, 9], [3, 50]),
+             ([10000, 0, 20, -3, 50], [-3, 10000]),
+             ([-5, -20, -400, -2, -40], [-400, -2]),
+             (['B', 'D', 'A', 'C'], ['A', 'D'])]
 
-def test(lst, res):
-  Test.assert_equals(min_max(lst), res, "tested on " + str(lst));
 
-Test.describe("min_max")
-Test.it("should work for some examples")
-test([1,2,3,4,5], [1,5])
-test([2334454,5], [5, 2334454])
+@pytest.mark.parametrize('arg,expected', test_data)
+def test_highest_profit(arg, expected):
+    """Test that highest and lowest numbers are returned."""
+    from highest_profit import min_max
+    assert min_max(arg) == expected
 
-for i in xrange(0,20):
-    r = randint(0,100)
-    test([r], [r,r])
+
+def test_attribute_error():
+    """If argument is not a list, raise an AttributeError."""
+    from highest_profit import min_max
+    with pytest.raises(AttributeError):
+        min_max(1)
