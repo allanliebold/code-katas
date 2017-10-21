@@ -1,7 +1,10 @@
-"""Kata: Tribonacci Sequence: return a list of n numbers in a Fibonacci-like sequence.
-   Instead of adding every two numbers to get the third, add every three to get the fourth.
+"""Kata: Tribonacci Sequence.
 
-Best Practices solution by Azuaron and others: 
+return a list of n numbers in a Fibonacci-like sequence.
+Instead of adding every two numbers to get the third, add every
+three to get the fourth.
+
+Best Practices solution by Azuaron and others:
 
 def tribonacci(signature, n):
   res = signature[:n]
@@ -9,7 +12,9 @@ def tribonacci(signature, n):
   return res
 """
 
+
 def tribonacci(signature, n):
+    """Return all numbers in the sequence up to and including the nth."""
     if n == 0:
         return []
     if n == 1:
