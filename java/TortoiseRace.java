@@ -1,8 +1,10 @@
 /*
 Tortoise Racing - 
-Given two speeds v1 (A's speed, integer > 0) and v2 (B's speed, integer > 0) and a lead g (integer > 0) how long will it take B to catch A?
+Tortoise A and Tortoise B are racing. B is faster, but A gets a head start. 
+Given two speeds v1 (A's speed, integer > 0) and v2 (B's speed, integer > 0) and a lead g (integer > 0) 
+how long will it take B to catch A?
 
-The result will be an array [hour, min, sec] which is the time needed in hours, minutes and seconds (don't worry for fractions of second).
+The result will be an array [hour, min, sec] which is the time needed in hours, minutes and seconds.
 If v1 is greater than v2, return null. 
 
 Top solution - 
