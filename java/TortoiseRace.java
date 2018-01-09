@@ -19,4 +19,21 @@ public class Tortoise {
 
     }
 }
+
+------
+
+public class Tortoise {
+    public static int[] race(int v1, int v2, int g) {
+        if (v1 > v2)
+          return null;
+          
+        int totalSeconds = (g * 3600) / (v2 - v1);
+        int[] result = new int[3];
+        result[2] = totalSeconds % 60;
+        result[1] = totalSeconds / 60 % 60;
+        result[0] = totalSeconds / 60 / 60;
+        return result;
+    }
+}
+
 */
