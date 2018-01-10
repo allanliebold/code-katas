@@ -13,3 +13,19 @@ def kebabize(string):
             kebabed = kebabed[1:]
     
     return kebabed
+
+"""
+Top solutions - 
+
+def kebabize(s):
+    return ''.join(c if c.islower() else '-' + c.lower() for c in s if c.isalpha()).strip('-')
+
+-----
+
+import re
+def kebabize(s):
+    s = ''.join([i for i in s if not i.isdigit()])
+    kebablist = filter(None, re.split("([A-Z][^A-Z]*)", s))
+    return "-".join(x.lower() for x in kebablist)
+
+"""
