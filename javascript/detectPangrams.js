@@ -1,7 +1,14 @@
-// Detect Pangram
+// Detect Pangram - Check if a string contains all letters of the alphabet at least once
 
-/*
+/* Top solution
+by marutiborker, Neats29, robbiesharma, ChyGrl
 
+function isPangram(string){
+  string = string.toLowerCase();
+  return "abcdefghijklmnopqrstuvwxyz".split("").every(function(x){
+    return string.indexOf(x) !== -1;
+  });
+}
 */
 
 function isPangram(string){
