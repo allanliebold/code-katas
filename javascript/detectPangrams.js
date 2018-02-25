@@ -1,3 +1,9 @@
+// Detect Pangram
+
+/*
+
+*/
+
 function isPangram(string){
   string = string.toLowerCase();
   console.log(string);
