@@ -4,9 +4,21 @@ def diamond(n):
     if n % 2 == 0 or n < 0:
         return None
      
-    expected = ""
+    middle = "*" * n
+    middle += "\n"
     
-    for x in range(0, n):
-        expected += ""
-
-    return expected
+    x = n - 2
+    space = 1
+    bottom = ""
+    
+    while x > 0:        
+        bottom += " " * space
+        bottom += "*" * x
+        bottom += "\n"
+        
+        x -= 2
+        space += 1
+    
+    top = bottom
+    
+    return top + middle + bottom
