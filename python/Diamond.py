@@ -4,11 +4,9 @@ def diamond(n):
     if n % 2 == 0 or n < 0:
         return None
      
-    layer = n / 2
     expected = ""
     
-    while layer < n:
-        expected += " "
-        layer += 1
+    for x in range(0, n):
+        expected += ""
 
     return expected
