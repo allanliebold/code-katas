@@ -30,7 +30,8 @@ def what_is_the_time(time_in_mirror):
 def what_is_the_time(time_in_mirror):
     hour = int(time_in_mirror[0:2])
     minute = int(time_in_mirror[3:])
-
+    time = ""
+    
     if minute == 0:
         if hour == 12:
             realHour = 12
@@ -46,8 +47,6 @@ def what_is_the_time(time_in_mirror):
        
     if realHour == 0:
         realHour = 12
-    
-    time = ""
     
     if realHour < 10:
         time += "0"
