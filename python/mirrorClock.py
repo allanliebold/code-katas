@@ -1,7 +1,14 @@
 // Clock in Mirror - Given a string representing the apparent time displayed on an analog clock, 
 // return a string with the correct 'unmirrored' time. 
 
-/* Top solution by Drymonade
+/* Top solution by Unnamed
+
+def what_is_the_time(time_in_mirror):
+    h, m = map(int, time_in_mirror.split(':'))
+    return '{:02}:{:02}'.format(-(h + (m != 0)) % 12 or 12, -m % 60)
+
+
+Top solution by Drymonade
 
 def what_is_the_time(time_in_mirror):
     array = time_in_mirror.split(":")
