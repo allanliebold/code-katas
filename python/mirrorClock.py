@@ -4,8 +4,12 @@
 def what_is_the_time(time_in_mirror):
     hour = int(time_in_mirror[0:2])
     minute = int(time_in_mirror[3:])
-
-    realHour = 11 - hour
+    
+    if minute == 0:
+        realHour = 12 - hour
+    else:
+        realHour = 11 - hour
+        
     if realHour == 0:
         realHour = 12
     
