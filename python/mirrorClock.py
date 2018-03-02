@@ -36,7 +36,6 @@ def what_is_the_time(time_in_mirror):
             realHour = 12
         else: 
             realHour = 12 - hour
-        
         realMinute = 0
     else:
         if hour == 12:
