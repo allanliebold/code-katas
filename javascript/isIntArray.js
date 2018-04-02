@@ -1,1 +1,3 @@
-
+function isIntArray() {
+  return false;  
+}
