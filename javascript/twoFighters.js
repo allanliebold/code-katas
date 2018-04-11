@@ -4,5 +4,6 @@ The declareWinner function accepts the two fighters and the firstAttacker as arg
 */
 
 function declareWinner(fighter1, fighter2, firstAttacker) {
-  return "Write your code here";
+  // While loop
+  return winner;
 }
