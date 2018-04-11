@@ -1,5 +1,12 @@
 /* Get the Middle Character - Given a string, return the middle character if its length is odd, 
 return the middle two characters if its length is even. 
+
+
+
+function getMiddle(s)
+{
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
 */
 
 // First solution 
