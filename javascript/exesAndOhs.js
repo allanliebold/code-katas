@@ -19,5 +19,5 @@ function XO(str) {
     if (char === 'x' || char === 'o') 
       char === 'x' ? exes += 1 : ohs += 1;
   }
-  return (exes === ohs ? true : false);
+  return exes === ohs;
 }
