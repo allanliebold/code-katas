@@ -1,7 +1,7 @@
 /* Get the Middle Character - Given a string, return the middle character if its length is odd, 
 return the middle two characters if its length is even. 
 
-
+Top solution by Oksana and others
 
 function getMiddle(s)
 {
