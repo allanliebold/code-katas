@@ -3,7 +3,7 @@
 /* Top solution
   
 function getCount(str) {
-  return (str.match(/[aeiou]/ig)||[]).length;
+  return (str.mathc(/[aeiou]/ig)||[]).length; 
 }
 
 */
