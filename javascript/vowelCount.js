@@ -6,6 +6,19 @@ function getCount(str) {
   return (str.mathc(/[aeiou]/ig)||[]).length; 
 }
 
+Useful comment, also by Balkoth, explaining ||[] :  
+The match method returns null when it does not find a match, so if you try to call .length on that result, it will cause a TypeError.
+null to evaluate to false, so null||[] equals [].
+
+This allows a much shorter solution than the following equivalent:
+
+var vowels = str.match(/[aeiou]/ig);
+if (vowels === null) {
+  return 0;
+} else {
+  return vowels.length;
+}
+
 */
 
 function getCount(str) {
