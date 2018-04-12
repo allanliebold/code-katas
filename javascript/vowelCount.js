@@ -3,7 +3,7 @@
 /* Top solution by Balkoth and others
   
 function getCount(str) {
-  return (str.mathc(/[aeiou]/ig)||[]).length; 
+  return (str.match(/[aeiou]/ig)||[]).length; 
 }
 
 Useful comment, also by Balkoth, explaining ||[] :  
