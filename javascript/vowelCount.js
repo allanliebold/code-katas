@@ -1,5 +1,13 @@
 // Vowel Count - Return the number of vowels (a, e, i, o, u) in a given string
 
+/* Top solution
+  
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
+
+*/
+
 function getCount(str) {
   var vowelsCount = 0;
   var vowels = 'aeiou';
