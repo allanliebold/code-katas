@@ -1,4 +1,4 @@
-// Vowel Count - Return the number of vowels in a given string
+// Vowel Count - Return the number of vowels (a, e, i, o, u) in a given string
 
 function getCount(str) {
   var vowelsCount = 0;
