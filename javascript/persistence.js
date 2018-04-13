@@ -7,5 +7,7 @@ persistence(39) === 3  because 3*9 = 27, 2*7 = 14, 1*4=4
 */
 
 function persistance(num) {
-    
+    while (num.length > 1) {
+      
+    }
 }
