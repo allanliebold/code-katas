@@ -5,7 +5,7 @@ The declareWinner function accepts the two fighters and the firstAttacker as arg
 
 function declareWinner(fighter1, fighter2, firstAttacker) {
   while (fighter1.health > 0 && fighter2.health > 0) {
-    
+    fighter2.health = fighter2.health -= fighter1.damage;
   }
   return winner;
 }
