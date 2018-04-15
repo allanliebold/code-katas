@@ -18,5 +18,7 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
       fighting = false;
       return fighter2.name;
     }
+  }
+
   return;
 }
