@@ -6,13 +6,13 @@ The declareWinner function accepts the two fighters and the firstAttacker as arg
 function declareWinner(fighter1, fighter2, firstAttacker) {
   var fighting = true; 
   while (fighting) {
-    fighter2.health -= fighter1.damage;
+    fighter2.health -= fighter1.damage; // fighter 1 attacks
     if fighter2.health <= 0 {
       fighting = false;  
       return fighter1.name
     }
     
-    fighter1.health -= fighter2.damage;
+    fighter1.health -= fighter2.damage; // fighter 2 attacks 
   }
     if fighter1.health <= 0 {
       fighting = false;
