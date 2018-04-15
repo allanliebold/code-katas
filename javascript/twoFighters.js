@@ -7,6 +7,9 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
   var fighting = true; 
   while (fighting) {
     fighter2.health -= fighter1.damage;
+    if fighter2.health <= 0 {
+      fighting = false;  
+    }
     
     fighter1.health -= fighter2.damage;
   }
