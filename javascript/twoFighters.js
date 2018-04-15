@@ -9,9 +9,13 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
     fighter2.health -= fighter1.damage;
     if fighter2.health <= 0 {
       fighting = false;  
+      return fighter1.name
     }
     
     fighter1.health -= fighter2.damage;
   }
-  return winner;
+    if fighter1.health <= 0 {
+        
+    }
+  return;
 }
