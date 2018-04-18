@@ -10,7 +10,6 @@ function reverseLetter(str) {
             .filter(val => /[a-zA-Z]/.test(val))
             .join('');  
 }
-
 */
 
 function reverseLetter(str) {
