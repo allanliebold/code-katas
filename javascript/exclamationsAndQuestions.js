@@ -34,6 +34,10 @@ A simpler way to get around zero matches returning null is to use || cleverly:
 If s has any matches, the first returns an array and so it's evaluated to true, and returned because || short-circuits. 
 Otherwise the first return null which is evaluated to false, so an empty array is returned instead.
 
+function product(s){
+  return (s.match(/!/g) || []).length * (s.match(/\?/g) || []).length;
+}
+
 */
 
 function product(s){
