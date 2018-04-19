@@ -21,6 +21,12 @@ var x = "Hello! Hello! Hello! Hello".split("!")
 var exclamations = x.length - 1
 // exclamations = 4 - 1 = 3
 
+Regex solution by wisyr
+
+function product(s){
+  return (s.match(/!/g) == null || s.match(/\?/g) == null) ? 0 : s.match(/!/g).length * s.match(/\?/g).length;
+}
+
 */
 
 function product(s){
