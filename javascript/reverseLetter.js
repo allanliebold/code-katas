@@ -2,6 +2,7 @@
 
 /* Top solutions by Roman93, juansgaitan, and others, 
 
+Using lexical arrow function: 
 reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
 
 function reverseLetter(str) {
