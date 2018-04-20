@@ -1,5 +1,9 @@
 /* Two to One - Take two strings and return a new string that combines them, sorted, with no repeated characters. 
 
+Top solution by Balkoth:
+
+const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
 */
 
 function longest(s1, s2) {
