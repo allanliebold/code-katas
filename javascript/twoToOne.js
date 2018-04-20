@@ -4,6 +4,7 @@ Top solution by Balkoth:
 
 const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
 
+Set stores only unique data. 
 
 Regex solution by pavel.azanov:
 
