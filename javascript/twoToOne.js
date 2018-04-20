@@ -5,6 +5,12 @@ Top solution by Balkoth:
 const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
 
 ... is the spread operator, which splits an iterable into its values, separated by commas. 
+arr1 = [1,2,3]
+arr2 = [4,5,6]
+arr3 = [...arr1, ...arr2] // [1,2,3,4,5,6]
+a = Math.max(...arr3) // 6
+Without the spread operator, arr3 would be [1,2,3], [4,5,6]
+
 Set stores only unique data. 
 
 Regex solution by pavel.azanov:
