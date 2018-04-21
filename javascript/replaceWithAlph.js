@@ -6,7 +6,6 @@ Top solution by jimmy-ringo:
 const alphabetPosition = (text) => text.replace(/[^a-zA-Z]/g,'')
                                        .split('').map(e => e.charCodeAt(0) - (e === e.toLowerCase() ? 96 : 64))
                                        .join(' ');
-
 */
 
 function alphabetPosition(text) {
