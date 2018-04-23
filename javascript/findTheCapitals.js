@@ -7,6 +7,13 @@ var capitals = function (word) {
   }, []);
 };
 
+Lexical arrow solution by Dirtier: 
+
+const capitals = word => { return word.match(/[A-Z]/g).map( x => { return word.indexOf(x) }) }
+
+return is actually not required in a lexical arrow function. This solution also doesn't account for duplicate capital
+letters, since indexOf will only return the index of the first match. 
+
 */
 
 var capitals = function (word) {  
