@@ -13,6 +13,24 @@ function findEvenIndex(arr)
   return -1;
 }
 
+Alternate solution with better time complexity:
+
+const findEvenIndex1 = (arr) => {
+   let post = arr.reduce((a, b) => a + b, 0);
+   let pre = 0;
+   let nextPre = 0;
+   let i = 0;
+   const length = arr.length;
+   while (pre !== post && i < length) {
+     post -= arr[i];
+     pre = nextPre;
+     nextPre += arr[i];
+     i++;
+   }
+   if (i === length) return -1;
+   return i - 1;  
+}
+
 */
 
 function getSum(sum, num) {
