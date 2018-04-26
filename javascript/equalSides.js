@@ -10,11 +10,8 @@ function getSum(sum, num) {
 function findEvenIndex(arr) {
   
   if (arr.length > 2) {
-    for (var i = 0; i < arr.length; i++) {
-      left = arr.slice(0, i);
-      right = arr.slice(i+1);
-      
-      if (left.reduce(getSum, 0) === right.reduce(getSum, 0))
+    for (var i = 0; i < arr.length; i++) {      
+      if (arr.slice(0, i).reduce(getSum, 0) === arr.slice(i+1).reduce(getSum, 0))
         return i;
     }
   }
