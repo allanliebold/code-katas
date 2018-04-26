@@ -4,9 +4,13 @@ to the sum of every integer to the right. Return -1 if this is not possible.
 */
 
 function findEvenIndex(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    var left = arr.slice(0, i);
-    var right = arr.slice(i+1);
+  
+  if (arr.length > 2) {
+    for (var i = 0; i < arr.length; i++) {
+      left = arr.slice(0, i);
+      right = arr.slice(i+1);
+      console.log('left:' + left + ' right:' + right);
+    }
   }
   
   return -1;
