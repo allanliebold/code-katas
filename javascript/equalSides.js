@@ -2,3 +2,7 @@
 to the sum of every integer to the right. Return -1 if this is not possible. 
 
 */
+
+function findEvenIndex(arr) {
+  
+}
