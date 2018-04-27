@@ -6,23 +6,21 @@ If the string does not end with a number the number 1 should be appended to the 
 
 function incrementString (strng) {
   var begin = ''; 
-  var end = '';
 
   for(var i = 0; i < strng.length; i++) {
     if(isNaN(strng[i])) {
       begin += strng[i];
     } else {
-      end = strng.slice(i, strng.length);
+      var endNums = strng.slice(i, strng.length);
+      break;
     }
   }
   
-  endNums = (parseInt(end) + 1).toString();
-  if (endNums.length < end.length) {
-    var diff = end.length - endNums.length;
-    end = ('0' * diff) + endNums;
-  }
+  var end = (parseInt(endNums) + 1 || 1).toString();
   
-  console.log('begin: ' + begin + ' end: ' + end);
+  if(endNums) {
+      return begin + end.padStart(endNums.length, '0');  
+  }
   
   return begin + end;
 }
