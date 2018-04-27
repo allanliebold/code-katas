@@ -35,3 +35,14 @@ function getCount(str) {
 
 // Refactor
 
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = 'aeiou';
+  
+  str.split('').forEach(function(char) {
+    if (vowels.includes(char)
+      vowelsCount++;
+  });
+    
+  return vowelsCount;
+}
