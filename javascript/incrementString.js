@@ -14,7 +14,12 @@ function incrementString (strng) {
     }
   }
   
-  end = (parseInt(end) + 1).toString();
+  endNums = (parseInt(end) + 1).toString();
+  if (endNums.length < end.length) {
+    var diff = end.length - endNums.length;
+    end = ('0' * diff) + endNums;
+  }
+  
   console.log('begin: ' + begin + ' end: ' + end);
   
   return begin + end;
