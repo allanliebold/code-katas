@@ -29,6 +29,16 @@ function doneOrNot(rows){
   return is_valid ? 'Finished!' : 'Try again!';
 }
 
+Solution by myjinxin2015:
+
+function doneOrNot(bd){
+  var o=[0,1,2,3,4,5,6,7,8] , p=[[0,1,2],[3,4,5],[6,7,8]],
+  a = o.map(i=>bd[i].slice().sort().join("")),
+  b = o.map(i=>o.map(j=>bd[j][i]).sort().join("")),
+  c = p.map(x=>p.map(y=>y.reduce((m,n)=>m.concat(x.map(z=>bd[z][n])),[]))).reduce((m,n)=>m.concat(n.map(x=>x.sort().join(""))),[]);
+  return a.concat(b,c).every(x=>x=="123456789") ? "Finished!" : "Try again!";
+}
+
 */
 
 function doneOrNot(board){
