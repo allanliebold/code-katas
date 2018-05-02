@@ -5,8 +5,8 @@
 
 function doneOrNot(board){
   for (var i = 0; i < board.length; i++) {
-    console.log(board[i].sort());
-    if (board[i].sort() !== [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]) {
+    console.log(board[i].sort().join(''));
+    if (board[i].sort().join('') !== '123456789') {
       return 'Try again!';
     }
   }
