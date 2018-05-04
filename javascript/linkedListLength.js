@@ -77,9 +77,5 @@ function count(head, data) {
     counter++;
   }
   
-  if (this.next != null) {
-    count += count(this.next, data);
-  }
-  
-  return counter;
+  return count(this.next, data);
 }
