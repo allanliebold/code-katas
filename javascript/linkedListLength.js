@@ -10,14 +10,25 @@ function Node(data) {
 
 function length(head) {
   var nodes = 0;
-  while (this.next != null) {
-    nodes++; 
-    length(this.data);
-  }  
-  nodes++;
+  if(this) {
+    nodes++
+    if (this.next != null) {
+      nodes += length(this.data);
+    }  
+  }
+  
   return nodes; 
 }
 
 function count(head, data) {
+  var counter = 0;
+  if (this.data == data) {
+    counter++;
+  }
   
+  if (this.next != null) {
+    count += count(this.next, data);
+  }
+  
+  return counter;
 }
