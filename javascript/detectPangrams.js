@@ -27,3 +27,6 @@ function isPangram(string){
     
   return false;
 }
+
+// Second try
+
