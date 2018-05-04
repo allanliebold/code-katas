@@ -28,5 +28,7 @@ function isPangram(string){
   return false;
 }
 
-// Second try
+// Second try. My first solution works but I want to try a different approach. 
+
+
 
