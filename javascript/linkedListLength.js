@@ -9,9 +9,15 @@ function Node(data) {
 }
 
 function length(head) {
-  // Your code goes here.
+  var nodes = 0;
+  while (this.next != null) {
+    nodes++; 
+    length(this.data);
+  }  
+  nodes++;
+  return nodes; 
 }
 
 function count(head, data) {
-  // Your code goes here.
+  
 }
