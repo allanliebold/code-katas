@@ -18,16 +18,14 @@ function likes(names) {
   if (names.length < 2)
     return `${firstName} likes this`;
   
+  firstName = '';
   var reversed = names.reverse();
-  
   var lastTwo = `${reversed[1]} and ${reversed[0]}`;
   console.log(lastTwo);
-    
-  var str = '';
-  
+      
   for (var i = 0; i < names.length - 2; i++) {
-    str += `${names[i]}, `;  
+    firstName += `${names[i]}, `;  
   }
   
-  return `${str} ${names[i + 1]} and ${names[i + 2]} like this`;
+  return `${firstName} ${lastTwo} like this`;
 }
