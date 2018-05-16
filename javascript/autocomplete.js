@@ -2,3 +2,7 @@
 that start with the input string. If there are more than 5 matches, restrict your output to the first 5 results. 
 
 */
+
+function autocomplete(input, dictionary) {
+  
+}
