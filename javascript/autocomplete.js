@@ -5,12 +5,15 @@ that start with the input string. If there are more than 5 matches, restrict you
 
 function autocomplete(input, dictionary){
   var matches = []; 
+  console.log(input);
   
   for(var i = 0; i < dictionary.length; i++) {
     if(matches.length === 5)
       break;
-    if(dictionary[i].startsWith(input));
+    if(dictionary[i].toLowerCase().startsWith(input)) {
       matches.push(dictionary[i]);
+      console.log(dictionary[i]);
     }
+  }
   return matches;
 }
