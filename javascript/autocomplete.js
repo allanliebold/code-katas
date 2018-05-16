@@ -4,9 +4,11 @@ that start with the input string. If there are more than 5 matches, restrict you
 */
 
 function autocomplete(input, dictionary){
-  var matches = dictionary.map(el => {
-    if(el.startsWith(input));
-      return el;
+  var matches = []; 
+  
+  dictionary.forEach(el => {
+    if(el.startsWith(input) && matches.length < 6);
+      matches.push(el);
     });
   console.log(matches);
 }
