@@ -3,6 +3,10 @@ that start with the input string. If there are more than 5 matches, restrict you
 
 */
 
-function autocomplete(input, dictionary) {
-  
+function autocomplete(input, dictionary){
+  var matches = dictionary.map(el => {
+    if(el.startsWith(input));
+      return el;
+    });
+  console.log(matches);
 }
