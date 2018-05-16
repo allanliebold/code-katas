@@ -1,6 +1,13 @@
 /* Autocomplete - The autocomplete function will take in an input string and a dictionary array and return the values from the dictionary 
 that start with the input string. If there are more than 5 matches, restrict your output to the first 5 results. 
 
+Top Solution by colbydauph:
+
+function autocomplete(input, dictionary){
+  var r = new RegExp('^' + input.replace(/[^a-z]/gi,''), 'i');
+  return dictionary.filter(function(w){ return r.test(w); }).slice(0, 5);
+}
+
 */
 
 function autocomplete(input, dictionary){
