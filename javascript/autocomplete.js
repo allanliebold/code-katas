@@ -11,6 +11,10 @@ This one isn't the most efficient, actually. It has to go through the entire dic
 slice the first 5 matches. It makes more sense to just stop when 5 matches have been found. 
 }
 
+Kind of a one line solution by acraileanu, but same problem using slice after going through the entire dictionary:
+
+const autocomplete = (input, dictionary) => dictionary.filter(item => item.toLowerCase().indexOf(input.toLowerCase().replace(/[^a-z]/g, "")) == 0).slice(0, 5);
+
 */
 
 function autocomplete(input, dictionary){
