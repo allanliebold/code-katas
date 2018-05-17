@@ -37,5 +37,7 @@ function autocomplete(input, dictionary){
 ^ or hat means not. At least here it does. If it's wrapping around with a ? at the end that signifies beginning to end. 
 Anyway, as it's used here it means everything that's not a-z or A-Z. I tried \w first but that includes numbers and underscores.
 
+Just learned that using uppercase for some metacharacters is similar to the above. \w means alphanumeric and \W means non-alphanumeric
+\D means non-digit and \S means non-space character
 
 */
