@@ -33,4 +33,9 @@ function autocomplete(input, dictionary){
 
 /* Some Regex notes. 
 /g at the end means global. That's how you get every instance covered by the regex script instead of just the first match.
+
+^ or hat means not. At least here it does. If it's wrapping around with a ? at the end that signifies beginning to end. 
+Anyway, as it's used here it means everything that's not a-z or A-Z. I tried \w first but that includes numbers and underscores.
+
+
 */
