@@ -32,5 +32,5 @@ function autocomplete(input, dictionary){
 }
 
 /* Some Regex notes. 
-
+/g at the end means global. That's how you get every instance covered by the regex script instead of just the first match.
 */
