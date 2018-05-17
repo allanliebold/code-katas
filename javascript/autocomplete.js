@@ -30,3 +30,7 @@ function autocomplete(input, dictionary){
   }
   return matches;
 }
+
+/* Some Regex notes. 
+
+*/
