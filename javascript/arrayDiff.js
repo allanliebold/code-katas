@@ -7,6 +7,7 @@ function array_diff(a, b) {
 }
 
 I actually managed to come up with one of the other top solutions on my own though. 
+Finally recognized a good use case for filter.
 */
 
 function array_diff(a, b) {
