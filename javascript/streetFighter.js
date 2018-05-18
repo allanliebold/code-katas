@@ -10,10 +10,8 @@ the list of characters who have been hovered by the selection cursor after all t
 */
 
 function streetFighterSelection(fighters, position, moves){
-  var selected = [];
-  
-  for(var i = 0; i < moves.length; i++) {
-    switch(moves[i]) {
+  return moves.map(move => {
+    switch(move) {
       case 'up':
         position[0] = 0;
         break;
@@ -26,10 +24,7 @@ function streetFighterSelection(fighters, position, moves){
       case 'right':
         position[1] === 5 ? position[1] = 0 : position[1]++;
         break;
-    }
-    
-    selected.push(fighters[position[0]][position[1]]);
-    
-  }
-  return selected;
+    }  
+    return fighters[position[0]][position[1]];
+  });
 }
