@@ -10,5 +10,19 @@ the list of characters who have been hovered by the selection cursor after all t
 */
 
 function streetFighterSelection(fighters, position, moves){
+  for(var i = 0; i < moves.length; i++) {
+    switch(moves[i]) {
+      case 'up':
+        break;
+      case 'down':
+        break;
+      case 'left':
+        break;
+      case 'right':
+        break;
+    }
+    
+    
+  }
   return "";
 }
