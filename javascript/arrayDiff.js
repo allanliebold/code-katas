@@ -7,7 +7,8 @@ function array_diff(a, b) {
 }
 
 I actually managed to come up with one of the other top solutions on my own though. 
-Finally recognized a good use case for filter.
+At first I did a forEach loop and just pushed anything not in b into another final array and returned that,
+but then I refactored. Finally recognized a good use case for filter.
 */
 
 function array_diff(a, b) {
