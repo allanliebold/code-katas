@@ -9,10 +9,12 @@ expandedForm(70304); // Should return '70000 + 300 + 4'
 */
 
 function expandedForm(num) {
-  var numStr = num.toString();
+  var numArr = num.toString();
   var finalStr = '';
   
-  for(var i = 0; i < numStr.length; i++) {
-    var zeroes = numStr.length - (i + 1);
+  for(var i = 0; i < numArr.length; i++) {
+    var zeroes = numArr.length - (i + 1);
+    var segment = i.toString() + zeroes;
+    console.log(segment);
   }
 }
