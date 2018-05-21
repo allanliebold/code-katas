@@ -13,8 +13,13 @@ function expandedForm(num) {
   var finalStr = '';
   
   for(var i = 0; i < numArr.length; i++) {
-    var zeroes = numArr.length - (i + 1);
-    var segment = i.toString() + zeroes;
-    console.log(segment);
+    if(numArr[i] != '0') {
+      var zeroes = '0'.repeat(numArr.length - (i + 1));
+      finalStr += numArr[i].toString() + zeroes;
+      if(i + 1 != numArr.length)
+        finalStr += ' + ';
+    }
   }
+  
+  return finalStr;
 }
