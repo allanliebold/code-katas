@@ -5,3 +5,7 @@ separated by dots.
 It should only accept addresses in canonical representation, so no leading 0s, spaces etc.
 */
 
+String.prototype.ipv4Address=function(){
+   console.log('127.0.0.1'.test(/\d{1,3}\.\d{1,3}\.d{1,3}\.d{1,3}/gi));
+   return this.match(/\d{1,3}\.\d{1,3}\.d{1,3}\.d{1,3}/gi);
+}
