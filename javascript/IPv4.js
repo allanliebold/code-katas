@@ -6,6 +6,6 @@ It should only accept addresses in canonical representation, so no leading 0s, s
 */
 
 String.prototype.ipv4Address=function(){
-   console.log('127.0.0.1'.test(/\d{1,3}\.\d{1,3}\.d{1,3}\.d{1,3}/gi));
+   console.log('127.0.0.1'.match('^\d{1,3}\.\d{1,3}\.d{1,3}\.d{1,3}$'));
    return this.match(/\d{1,3}\.\d{1,3}\.d{1,3}\.d{1,3}/gi);
 }
