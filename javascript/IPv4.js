@@ -6,6 +6,6 @@ It should only accept addresses in canonical representation, so no leading 0s, s
 */
 
 String.prototype.ipv4Address=function(){
-   var check = this.match('^[0-127]\.[0-127]\.[0-127]\.[0-127]$') 
+   var check = this.match('((\d{1,3})\.){3}(\d{1,3})');
    return check === null ? false : true;
 }
