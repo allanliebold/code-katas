@@ -9,3 +9,6 @@ Input: Hello
 Output: Hotel Echo Lima Lima Oscar
 */
 
+function to_nato(words) {
+  
+}
