@@ -45,3 +45,13 @@ function to_nato(words) {
     return '?!.'.includes(char) ? char : natoAlpha[char.toLowerCase()];
   }).join(' ');
 }
+
+// Refactor 2. A little more readable? 
+
+function to_nato(words) {  
+  return words.replace(/ /g, '')
+              .toLowerCase()
+              .split('')
+              .map(char => '.?!'.includes(char) ? char : natoAlpha[char])
+              .join(' ');
+}
