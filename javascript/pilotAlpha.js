@@ -10,5 +10,11 @@ Output: Hotel Echo Lima Lima Oscar
 */
 
 function to_nato(words) {
+  var nato = words.split('').map(char => {
+    if('?!.'.includes(char))
+      return char;
+    return char;
+  });
   
+  console.log(nato);
 }
