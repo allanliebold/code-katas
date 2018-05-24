@@ -7,6 +7,12 @@ Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.
 
 Input: Hello
 Output: Hotel Echo Lima Lima Oscar
+
+Top solution by asmgf
+
+function to_nato(words) {
+  return words.split('').filter(c => c !== ' ').map(c => table[c.toUpperCase()] || c).join(' ');
+}
 */
 
 function to_nato(words) {
