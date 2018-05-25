@@ -6,7 +6,7 @@ a list of moves of the selection cursor (which are up, down, left, right);
 
 Output -
 the list of characters who have been hovered by the selection cursor after all the moves 
-(ordered and with repetition, all the ones after a move, whether successful or not, see tests);
+(ordered and with repetition, all the ones after a move, whether successful or not, see tests);\
 */
 
 function streetFighterSelection(fighters, position, moves){
