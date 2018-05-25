@@ -2,4 +2,4 @@
 
 */ 
 
-var solution = string => string.split('').map(char => char.match(/[A-Z]/) ? ' ' + char : char).join('');
+let solution = string => string.split('').map(char => char.match(/[A-Z]/) ? ' ' + char : char).join('');
