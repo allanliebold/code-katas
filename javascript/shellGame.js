@@ -10,7 +10,7 @@ The final swap doesn't affect the position of the ball.
 
 */
 
-find_the_ball = function(start,swaps){
+let find_the_ball = (start,swaps) => {
   var ball = start; 
   for (var i = 0; i < swaps.length; i++) {
     if (swaps[i][0] == ball) {
@@ -19,6 +19,5 @@ find_the_ball = function(start,swaps){
       ball = swaps[i][0];
     }
   }
-  
   return ball;
 }
