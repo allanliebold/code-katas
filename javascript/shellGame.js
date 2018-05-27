@@ -13,13 +13,8 @@ The final swap doesn't affect the position of the ball.
 let find_the_ball = (start,swaps) => {
   let ball = start; 
   for (var i = 0; i < swaps.length; i++) {
-    if (swaps[i].includes(ball)) {
-      if (swaps[i][0] == ball) {
-        ball = swaps[i][1];
-      } else {
-        ball = swaps[i][0];
-      }
-    }
+    if (swaps[i].includes(ball)) 
+      swaps[i][0] == ball ? ball = swaps[i][1] : ball = swaps[i][0];
   }
   return ball;
 }
