@@ -10,3 +10,6 @@ The final swap doesn't affect the position of the ball.
 
 */
 
+find_the_ball = function(start,swaps){
+  //your code here
+}
