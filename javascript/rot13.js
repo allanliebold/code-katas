@@ -3,7 +3,7 @@
 */
 
 function rot13(message){
-  message.forEach(() => {
-  
+  message.forEach(char => {
+    
   });
 }
