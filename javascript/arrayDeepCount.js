@@ -16,6 +16,6 @@ deepCount([1, 2, [3, 4, [5]]]);
 function deepCount(a){
   var count = 0;
   a.forEach(() => {
-    
+    count++;
   });
 }
