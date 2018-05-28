@@ -4,3 +4,7 @@ Your task is to create a function deepCount that returns the number of ALL eleme
 including any within inner-level arrays.
 
 */
+
+function deepCount(a){
+  
+}
