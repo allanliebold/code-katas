@@ -8,7 +8,7 @@ The first swap moves the ball from 0 to 1
 The second swap moves the ball from 1 to 2
 The final swap doesn't affect the position of the ball.
 
-Top solution by Balkoth:
+Top solution by Balkoth using reduce:
 
 function find_the_ball(start,swaps) {
   return swaps.reduce(function(ball, swap) {
