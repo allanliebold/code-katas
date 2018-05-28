@@ -7,4 +7,5 @@ function rot13(message){
   message.forEach(char => {
     
   });
+  return translated;
 }
