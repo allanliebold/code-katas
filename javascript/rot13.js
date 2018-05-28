@@ -5,6 +5,7 @@
 function rot13(message){
   var translated = '';
   const alpha = 'abcdefghijklmnopqrstuvwxyz';
+  
   message.forEach(char => {
     
   });
