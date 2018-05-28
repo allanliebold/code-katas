@@ -3,6 +3,7 @@
 */
 
 function rot13(message){
+  var translated = '';
   message.forEach(char => {
     
   });
