@@ -10,23 +10,31 @@ Moving up from Balrog or Sagat should behave the same way as moving up from any 
 */
 
 function superStreetFighterSelection(fighters, position, moves){
-  return [];
-}
-
-function streetFighterSelection(fighters, position, moves){
-  return moves.map(move => {
+    return moves.map(move => {
     switch(move) {
       case 'up':
-        position[0] = 0;
+        if(position[1] === 0 || position [1] === 5) {
+          position[0] = 1;
+        } else {
+          position[0] === 0 ? position[0] = 0 : position[0]--;
+        }
         break;
       case 'down':
-        position[0] = 1;
+        position[0] === 2 ? position[0] = 2 : position[0]++;
         break;
       case 'left':
-        position[1] === 0 ? position[1] = 5 : position[1]--;
+        if(position[0] === 0) {
+          position[1] === 1 ? position[1] = 4 : position[1]--;
+        } else {
+          position[1] === 0 ? position[1] = 5 : position[1]--;
+        }
         break;
       case 'right':
-        position[1] === 5 ? position[1] = 0 : position[1]++;
+        if(position[0] === 0) {
+          position[1] === 4 ? position[1] = 1 : position[1]++;
+        } else {
+          position[1] === 5 ? position[1] = 0 : position[1]++;
+        } 
         break;
     }  
     return fighters[position[0]][position[1]];
