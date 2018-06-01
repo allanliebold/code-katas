@@ -1,4 +1,5 @@
-/* Super Street Fighter 2 Character Selection - Same as before but now with the updated character roster. 
+/* Super Street Fighter 2 Character Selection - Same as before but now with the updated character roster. There are now 
+3 rows of characters instead of 2, but there are fewer characters on the top row than the other two rows. 
 
 fighters = [
 	[       "",    "Ryu",  "E.Honda",  "Blanka",   "Guile", ""       ],
