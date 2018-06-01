@@ -8,3 +8,7 @@ fighters = [
 
 
 */
+
+function superStreetFighterSelection(fighters, position, moves){
+  return [];
+}
