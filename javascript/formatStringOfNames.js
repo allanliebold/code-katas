@@ -60,7 +60,7 @@ function list(names){
   
   if(names.length > 1) {
     for(var i = 1; i < names.length - 1; i++) {
-      listStr += ', ' + names[i].name;
+      listStr += `, ${names[i].name}`;
     }
     
     listStr += ` & ${names[names.length - 1].name}`;
