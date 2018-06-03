@@ -50,3 +50,6 @@ function list(names){
   
   return listStr;
 }
+
+// Refactor
+
