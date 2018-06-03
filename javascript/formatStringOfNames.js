@@ -63,7 +63,7 @@ function list(names){
       listStr += ', ' + names[i].name;
     }
     
-    listStr += ' & ' + names[names.length - 1].name;
+    listStr += ` & ${names[names.length - 1].name}`;
   }
   
   return listStr;
