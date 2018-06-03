@@ -15,6 +15,7 @@ list([ {name: 'Bart'} ])
 list([])
 // returns ''
 
+Top solution by clementoriol: 
 
 function list(names){
   return names.reduce(function(prev, current, index, array){
