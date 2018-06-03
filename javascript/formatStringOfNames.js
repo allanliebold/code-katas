@@ -53,7 +53,7 @@ function list(names){
 function list(names){
   var listStr = '';
   
-  if (names.length > 0) 
+  if(names.length > 0) 
     listStr += names[0].name;
   
   if(names.length > 1) {
