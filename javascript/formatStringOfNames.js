@@ -30,9 +30,7 @@ function list(names){
     }
   }, '');
  }
-
 */
-
 
 function list(names){
   var listStr = '';
