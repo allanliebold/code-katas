@@ -29,3 +29,4 @@ def kebabize(s):
     return "-".join(x.lower() for x in kebablist)
 
 """
+def kebabize(s): 
