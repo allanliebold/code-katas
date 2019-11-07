@@ -31,3 +31,5 @@ def kebabize(s):
 """
 def kebabize(s): 
     kebabed = ''
+
+    for char in string:
